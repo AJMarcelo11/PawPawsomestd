@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+<title>PawPawsome Studio</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="slider.css">
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="js/bjqs-1.3.min.js"></script>
+
+</head>
+<body bgcolor="#524D4D">
+<style>
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+<div id="container">
+
+<marquee behavior="alternate">
+<font face="Comic Sans" size="6" color="cyan">
+<h2><center>PawPawsome Studio</center></h2>
+</marquee>
+</font>
+<center><img src="logo.png" width="500" height="350" title="Logo" style="border-color:#A6ACAD; border-width:10px; border-padding: 100%;
+    border-radius: 100%; border-style:solid;" >></center>
+<center>
+<font face="Comic Sans" size="6" color="cyan"><i>
+<h3>"Your One-Stop Shop for Pet Happiness"</h3></i></font>
+
+<div id="banner-fade">
+<center>
+<img src="food.png" width="220" height="200" title="Cat Goodies -Price Php 120">
+<img src="food1.png" width="220" height="200" title="Dog Goodies - Price Php 120"">
+<img src="soap.png" width="220" height="200" title="Paw Soap - Price Php 100">
+<img src="shampoo.png" width="200" height="200" title="Animal Shampoo - Price Php 80">
+<img src="dextrose.png" width="220" height="200" title="Dextrovet(for animals) - Price Php 60">
+<img src="suklay.png" width="220"" height="200" title="Pet Comb - Price Php 150">
+<img src="leash.png" width="220"" height="200" title="Pet Collar - Price Php 80">
+<img src="sand.png" width="220" height="200" title="Litter Sand - Price Php 120">
+<img src="water.png" width="220"" height="200" title="Food and Water dispenser - Price Php 150">
+<img src="towel.png" width="220" height="200" title="Pet Towel - Price Php 200">
+</center>
+
+<script class="secret-source"> jQuery(document).ready(function($) {
+$('#banner-fade').bjqs({
+height :320,
+width :620,
+responsive :true
+}); });
+</script>
+</div>
+
+<h1><center><font face="Verdana" size="4" color="#666666">______________________________________________________________________________________</center></h1>
+<p>
+<p>
+<center><A HREF="topic1.html">Cat Goodies</A> | <A HREF="topic2.html">Dog Goodies</A> | <A HREF="topic3.html">Soap</A> | <A HREF="topic4.html">Pet shampoo</A> | <A HREF="topic5.html">DextRose</A><h3> <A HREF="studio.html">All about PawPawsome Studio</A></h3> </center>
+<center><A HREF="topic6.html">Pet Comb</A> | <A HREF="topic7.html">Pet collar</A> | <A HREF="topic8.html">Litter Sand</A> | <A HREF="topic9.html">Food And Water Dispenser</A> | <A HREF="topic10.html">Pet Towel</A></center>
+<p>
+<p>
+<center>
+<font face="Comic Sans" size="4" color="white">2548 Kalimbas St Sta Cruz Manila Cell Number 09512395540
+<font face="Verdana" size="2" color="#666666">
+<p>
+Copyright©2023 All rights reserved.
+</font>
+</center>
+<ul>
+</body>
+</html>
+
+<!-- ******** slide *********** -->
+
+<SCRIPT LANGUAGE="JavaScript">
+
+var num=1
+img1 = new Image ()
+img1.src = "food.png"
+img2 = new Image ()
+img2.src = "food1.png"
+img3 = new Image ()
+img3.src = "soap.png"
+img4 = new Image ()
+img4.src = "shampoo.png"
+img5 = new Image ()
+img5.src = "dextrose.png"
+img6 = new Image ()
+img6.src = "suklay.png"
+img7 = new Image ()
+img7.src = "leash.png"
+img8 = new Image ()
+img8.src = "sand.png"
+img9 = new Image ()
+img9.src = "water.png"
+img10 = new Image ()
+img10.src = "towel.png"
+
+
+
+text1 = "Basic Computer Concepts"
+text2 = "Word Processing"
+text3 = "My Company"
+text4 = "Basic Computer Concepts"
+text5 = "Basic Computer Concepts"
+text6 = "Word Processing"
+text7 = "My Company"
+text8 = "Basic Computer Concepts"
+text9 = "My Company"
+text10 = "Basic Computer Concepts"
+
+function slideshowUp()
+{
+num=num+1
+if (num==11)
+{num=1}
+document.mypic.src=eval("img"+num+".src")
+document.joe.burns.value=eval("text"+num)
+}
+
+function slideshowBack()
+{
+num=num-1
+if (num==0)
+{num=10}
+document.mypic.src=eval("img"+num+".src")
+document.joe.burns.value=eval("text"+num)
+}
+
+</SCRIPT>
+
+<!-- The Image and Form Codes are Below -->
+
+<CENTER>
+<IMG SRC="logo.png" NAME="mypic" BORDER=0 HEIGHT="300" WIDTH="300">
+<p>
+
+
+<A HREF="JavaScript:slideshowBack()"> Back</A>
+
+<A HREF="JavaScript:slideshowUp()"> Next</A>
