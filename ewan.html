@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PAYMENT</title>
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #524D4D;
+      padding: 20px;
+    }
+    
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .left-column,
+    .right-column {
+      flex: 1;
+    }
+    
+    .left-column {
+      padding-right: 0px;
+      
+      border-radius: 8px;
+    }
+    .left-column label{
+        height: 8px;
+    }
+    
+    .right-column {
+        padding-left: -5px;
+        border-radius: 8px;
+    }
+    .right-column label{
+       
+        height: 8px;
+    }
+    
+    h1 {
+      text-align: left;
+      color: #01f7ff;
+      font-size: 65px;
+    }
+    
+    h2 {
+      text-align: center;
+      color: #ffffff;
+    }
+
+    h3 {
+      text-align: left;
+     
+      color: #ffffff;
+    }
+    h3 span{
+        
+        color: #08fe00;
+    }
+    
+    .left-column .check-f {
+      max-width: 800px;
+      margin:  auto;
+      background-color: #006568;
+      padding: 1px 20px 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 9px #817979;
+      
+    }
+    .right-column .check-f {
+      max-width: 500px;
+      margin:-16rem auto;
+      background-color: #006568;
+      padding: 1px 20px 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 9px #817979;
+      
+    }
+    
+    .check-f label {
+      display: block;
+      color: #ffffff;
+      margin-bottom: 10px;
+      font-weight: bold;
+      
+    }
+    
+    .check-f input[type="text"],
+    .check-f input[type="number"],
+    .check-f select {
+      width: 100%;
+      padding: 10px;
+      background-color: #8fcae3;
+      border: 1px solid #817979;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+    .check-f .payment-details {
+      margin-bottom: 20px;
+    }
+    
+    .check-f .shipping-details {
+      margin-bottom: 20px;
+    }
+    .check-f .shipping-details  h2 {
+      padding-bottom: -10px;
+
+    }
+  
+    .check-f button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #c000fb;
+      color: #08fe00;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    
+    .check-f button:hover {
+      color: red;
+      background-color: #7c00a2;
+    }
+    
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #c000fb;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    
+    .btn:hover {
+      color: aqua;
+      background-color: #7c00a2;
+    }
+  </style>
+</head>
+<script src="https://kit.fontawesome.com/0cd21b9f86.js" crossorigin="anonymous"></script>
+<body>
+
+
+    <div class="left-column">
+        <h1>P<i class="fa-solid fa-paw"></i>wPawSome Form</h1>
+        <h3><span>                  Responsive Checkout Form</span><br>
+          We value the information that you share with us
+          and we respect your privacy.<br> Rest assured that 
+          your information will be solely used for this website.
+        </h3>
+    </div>
+
+         <div class="container">
+    
+    
+    
+    
+            <div class="left-column">
+      <form action="last.html" method="POST">
+      
+     
+            
+
+            <div class="check-f">
+                <div class="kinds-of-pet-food">
+                    <h2><i class="fa-solid fa-dog"></i> P<i class="fa-solid fa-paw"></i>ws Product</h2>
+                   
+                    <label for="product"><i class="fa-sharp fa-solid fa-bone"></i> Product:</label>
+                    <select id="product" name="product">
+                      <option value="product1">CAT GOODIES</option>
+                      <option value="product2">DOG GOODIES</option>
+                      <option value="product3">PAW SOAP</option>
+                      <option value="product4">PAW SHAMPOO</option>
+                      <option value="product5">DEXTROSE </option>
+                      <option value="product6">PET COMB</option>     
+                      <option value="product7">PET COLLAR</option>
+                      <option value="product8">LITTER SAND</option>
+                      <option value="product9">FOOD AND WATER DISPENSER</option>
+                      <option value="product10">PET TOWEL</option>
+                    </select><br><br>
+                    
+                    <label for="quantity"><i class="fa-solid fa-sort-amount-up"></i> Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1" required><br><br>
+                    
+                    <label for="price"><i class="fa-solid fa-money-bill"></i> Price:</label>
+                    <input type="text" id="price" name="price" value="120" readonly><br><br>
+          
+                    
+                  </div>
+        </div>    
+    </div>
+    
+    <div class="right-column">
+      <div class="check-f">
+       
+      
+        <div class="shipping-details">
+            <h2><i class="fa-solid fa-user"></i> P<i class="fa-solid fa-paw"></i>ws Customer Details</h2>
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" placeholder="Enter full name" required><br><br>
+    
+    <label for="contact"><i class="fa-solid fa-phone"></i> Contact Number:</label>
+    <input type="text" id="contact" name="contact" placeholder="Ex. 0912 345 6789" required><br><br>
+
+    <label for="address"><i class="fa-solid fa-location-dot"></i> Address:</label>
+    <input type="text" id="address" name="address" placeholder="Enter address" required><br><br>
+    
+    <label for="city"><i class="fa-solid fa-city"></i> City:</label>
+    <input type="text" id="city" name="city" placeholder="Enter city" required><br><br>
+
+    <label for="province"><i class="fa-solid fa-mountain-city"></i> Province:</label>
+    <input type="text" id="province" name="province" placeholder="Enter Province" required><br><br>
+
+    <label for="zipCode">ZIP Code:</label>
+    <input type="text" id="zipCode" name="zipCode" placeholder="Enter ZIP code" required><br><br>
+
+    
+    <div class="payment-details">
+        
+        <label for="cardNumber"><i class="fa-solid fa-g"></i> Gcash Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" placeholder="Ex. 0912 345 6789" required><br><br>
+        
+        <label for="expiryDate">Gcash Owner Name:</label>
+        <input type="text" id="expiryDate" name="expiryDate" placeholder="Panchito Alba" required><br><br>
+        
+       
+      </div>
+  </div>
+        
+        <input type="submit" name="submit" value="  Continue to checkout "  class="btn" > 
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    const quantityInput = document.getElementById('quantity');
+    const priceInput = document.getElementById('price');
+    const productSelect = document.getElementById('product');
+    
+    productSelect.addEventListener('change', updatePrice);
+    quantityInput.addEventListener('input', updatePrice);
+    
+    function updatePrice() {
+      const quantity = quantityInput.value;
+      const product = productSelect.value;
+      let price;
+      
+      switch (product) {
+        case 'product1':
+          price = 120;
+          break;
+        case 'product2':
+          price = 120;
+          break;
+        case 'product3':
+          price = 100;
+          break;
+        case 'product4':
+          price = 80;
+          break;
+        case 'product5':
+          price = 60;
+          break;
+        case 'product6':
+          price = 150;
+          break;
+        case 'product7':
+          price = 80;
+          break;
+        case 'product8':
+          price = 120;
+          break;
+        case 'product9':
+          price = 150;
+          break;
+        case 'product10':
+          price = 200;
+          break;
+        default:
+          price = 120;
+          break;
+      }
+      
+      const totalPrice = quantity * price;
+      priceInput.value = totalPrice;
+    }
+  </script>
+</body>
+</html>
